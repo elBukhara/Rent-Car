@@ -513,6 +513,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
       // Get the form elements
+      const form = document.querySelector('form');
       const nameInput = document.getElementById('formGroupExampleInput');
       const phoneInput = document.getElementById('formGroupExampleInput2');
       const submitButton = document.querySelector('[id="contact-submit"]');
@@ -535,6 +536,10 @@
       // Initial check when the page loads
       updateSubmitButton();
 
+      // Handle form submission
+      form.addEventListener('submit', (event) => {
+          event.preventDefault();
+      });
       
   });
 </script>

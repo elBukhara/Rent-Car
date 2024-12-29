@@ -1,0 +1,139 @@
+
+/* Sky section */
+#sky-section {
+    position: relative;
+    height: 70vh;
+    background-image: url('/assets/images/sky-image.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: visible;
+    color: #505050;
+}
+
+#sky-section .text-container {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    z-index: 2;
+}
+
+#sky-section .car-container {
+    position: absolute;
+    bottom: -10%; /* Negative margin to overlap the next section */
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+#sky-section .car-image {
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Advantages section */
+#advantages {
+    background-color: #505050;
+    position: relative;
+    z-index: 0;
+    margin-top: 0; 
+}
+
+#advantages-cards {
+    margin-left: 0 !important;
+}
+
+.icon {
+    height: 55px;
+    width: 55px;
+}
+
+
+@media (max-width: 480px) {
+    #sky-section {
+        height: 50vh; /* Further reduce height for very small screens */
+    }
+
+    #sky-section .text-container {
+        top: 20%;
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+
+    #sky-section .car-container {
+        bottom: -8%; /* Remove overlap for very small screens */
+    }
+
+    #sky-section .car-image {
+        max-width: 100%; /* Ensure car fits the screen width */
+    }
+
+    #advantages {
+        padding: 10px;
+        padding-top: 20%; /* Better spacing for readability */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 769px) {
+    #sky-section {
+        height: 60vh; /* Reduce section height for smaller screens */
+    }
+
+    #sky-section .text-container {
+        top: 10%;
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    #sky-section .car-container {
+        bottom: -10%; /* Adjust overlap */
+    }
+
+    #sky-section .car-image {
+        max-width: 100%; /* Make the car image fully responsive */
+    }
+
+    #advantages {
+        padding: 15px;
+        padding-top: 15%; /* Increase padding for better layout */
+    }
+}
+
+
+@media (min-width: 770px) and (max-width: 992px) {
+    #sky-section .car-container {
+        bottom: -7.5%; /* Adjust overlap */
+    }
+
+    #sky-section .text-container {
+        top: 10%;
+        font-size: 1.8rem; /* Reduce font size for smaller screens */
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 2559px) {
+    #sky-section .car-container {
+        bottom: -12%; /* Adjust overlap */
+    }
+
+    #sky-section .text-container {
+        top: 5%;
+        font-size: 2.2rem; /* Reduce font size for smaller screens */
+    }
+
+    #advantages .py-5 {
+        padding-top: 7rem !important;
+    }
+}
+
+
+
+@media (min-width: 2560px) {s
+    #sky-section .car-container {
+        bottom: -5%; /* Adjust overlap */
+    }
+}
+
+
+
+

@@ -1,0 +1,64 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(153, 7, 7);
+  border-radius: 5px;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+.bg-dark-mine {
+  background-color: #030303 !important;
+}
+
+/* ABOUT */
+/* 
+#about {
+    height: 80vh;
+} */
+
+#cars {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}
+
+.card img {
+  height: 13rem;
+  object-fit: cover;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25) !important;
+  --bs-accordion-active-bg: #ffcfcf !important;
+  --bs-accordion-active-color: #000 !important;
+}
+
+/* MODAL */
+.modal-content {
+  border-radius: 0.25rem;
+}
+.modal-footer {
+  border-top: none;
+}
+
+.telegram-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.phone-link {
+  text-decoration: none;
+}
+.telegram-link:hover,
+.phone-link:hover {
+  text-decoration: underline;
+}
+

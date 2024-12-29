@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/carousel.css">
+    <link rel="stylesheet" href="/styles/parallax.css">
+    <link rel="stylesheet" href="/styles/sky.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-mine">
+    <div class="container">
+        <a class="navbar-brand" href="/">RentCar Bukhara</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#about">О нас</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#cars">Автопарк</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#contact">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#location">Локация</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<section class="" id="carousel-container">
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item c-item active">
+                <img src="assets/images/cover.jpg" 
+                class="d-block w-100 c-img c-img-first" alt="...">
+                <div class="carousel-caption top-0 mt-3 d-md-block">
+                    <div class="row">
+                        <div class="col-md-6 caption">
+                            
+                          <div class="mt-5">
+                              <h1 class="display-3 fw-bold text-light text-start pb-3 text-shadow">Надежная аренда машин в Бухаре</h1>
+                              <p class="lead text-light text-start">Арендуйте новое авто за несколько минут и наслаждайтесь поездкой без забот!</p>
+                              <div class="text-start">
+                                  <a href="#cars" class="btn btn-secondary btn-lg px-4 shadow">Начать сейчас!</a>
+                              </div>
+                          </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="assets/images/cover3.jpeg" 
+                class="d-block w-100 c-img c-img-second" alt="...">
+                <div class="carousel-caption top-0 mt-3 d-md-block">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6 caption">
+                            <div class="mt-2">
+                                <h1 class="display-3 fw-bold text-light text-end pb-3 text-shadow">Удобство и свобода передвижения</h1>
+                                <p class="lead text-light text-end">Идеальное решение для городских поездок и путешествий по региону.</p>
+                                <div class="text-end">
+                                    <a href="#cars" class="btn btn-secondary btn-lg px-4 shadow">Забронировать авто</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- SVG -->
+<footer style="margin-top: -5px;">
+    <svg id="visual" viewBox="0 0 960 190" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="960" height="190" fill="#ffffff"></rect><path d="M0 157L22.8 161.7C45.7 166.3 91.3 175.7 137 176.3C182.7 177 228.3 169 274 165.8C319.7 162.7 365.3 164.3 411.2 164.3C457 164.3 503 162.7 548.8 160.2C594.7 157.7 640.3 154.3 686 158.3C731.7 162.3 777.3 173.7 823 179.7C868.7 185.7 914.3 186.3 937.2 186.7L960 187L960 0L937.2 0C914.3 0 868.7 0 823 0C777.3 0 731.7 0 686 0C640.3 0 594.7 0 548.8 0C503 0 457 0 411.2 0C365.3 0 319.7 0 274 0C228.3 0 182.7 0 137 0C91.3 0 45.7 0 22.8 0L0 0Z" fill="#737373"></path><path d="M0 152L22.8 147.2C45.7 142.3 91.3 132.7 137 133C182.7 133.3 228.3 143.7 274 140.8C319.7 138 365.3 122 411.2 117.3C457 112.7 503 119.3 548.8 123.7C594.7 128 640.3 130 686 127.8C731.7 125.7 777.3 119.3 823 114.7C868.7 110 914.3 107 937.2 105.5L960 104L960 0L937.2 0C914.3 0 868.7 0 823 0C777.3 0 731.7 0 686 0C640.3 0 594.7 0 548.8 0C503 0 457 0 411.2 0C365.3 0 319.7 0 274 0C228.3 0 182.7 0 137 0C91.3 0 45.7 0 22.8 0L0 0Z" fill="#4c4c4c"></path><path d="M0 85L22.8 85.2C45.7 85.3 91.3 85.7 137 88.2C182.7 90.7 228.3 95.3 274 98.8C319.7 102.3 365.3 104.7 411.2 99.7C457 94.7 503 82.3 548.8 77.5C594.7 72.7 640.3 75.3 686 80.2C731.7 85 777.3 92 823 93.2C868.7 94.3 914.3 89.7 937.2 87.3L960 85L960 0L937.2 0C914.3 0 868.7 0 823 0C777.3 0 731.7 0 686 0C640.3 0 594.7 0 548.8 0C503 0 457 0 411.2 0C365.3 0 319.7 0 274 0C228.3 0 182.7 0 137 0C91.3 0 45.7 0 22.8 0L0 0Z" fill="#292929"></path><path d="M0 65L22.8 65C45.7 65 91.3 65 137 61.2C182.7 57.3 228.3 49.7 274 45C319.7 40.3 365.3 38.7 411.2 42.7C457 46.7 503 56.3 548.8 59.3C594.7 62.3 640.3 58.7 686 58.8C731.7 59 777.3 63 823 63.2C868.7 63.3 914.3 59.7 937.2 57.8L960 56L960 0L937.2 0C914.3 0 868.7 0 823 0C777.3 0 731.7 0 686 0C640.3 0 594.7 0 548.8 0C503 0 457 0 411.2 0C365.3 0 319.7 0 274 0C228.3 0 182.7 0 137 0C91.3 0 45.7 0 22.8 0L0 0Z" fill="#030303"></path></svg>
+</footer>
+
+<!-- About -->
+<main class="container my-5" id="about">
+    <h3 class="display-5 text-center fw-bold">О Нас</h3>
+
+    <div class="row">
+      <div class="col-xl-6 order-xl-last text-center px-2">
+        <img class="my-auto mx-auto img-fluid" src="assets/cars/malibu3.jpg" alt="">
+      </div>
+
+      <div class="col-xl-6 order-xl-first">
+          <div class="p-5">
+              <h4 class="text-start fs-3 fw-bold text-uppercase">Ваш доверенный автопарк</h5>
+              <p class="fs-4">
+                Мы предлагаем широкий выбор <strong>новых</strong> автомобилей для аренды в Бухаре. 
+                Наша компания известна своей ответственностью и вниманием к клиентам. 
+                Мы предлагаем профессиональную поддержку и сервис, индивидуальный подход к каждому клиенту, <strong>четкие цены</strong> и прозрачные условия c гарантией. 
+                Выбирайте новый автомобиль у нас и наслаждайтесь комфортным путешествием по Бухаре!
+              </p>
+          </div>
+      </div>
+
+
+  </div>
+
+</main>
+
+<!-- Parallax -->
+<section class="container my-5" id="parallax-section">
+    <div class="parallax d-flex justify-content-center">
+        <div class="parallax-text p-5">
+            <h3 class="display-5 text-center fw-bold text-uppercase mb-2">Лучший сервис</h3>
+        
+            <p class="my-3">Добро пожаловать в RentCar Bukhara — вашего надежного партнера в сфере проката автомобилей в Узбекистане. Наша история началась в 2018 году.</p>
+            <a type="button" class="btn btn-lg btn-secondary" href="#cars">Забронировать</a>
+                          
+        </div>
+    </div>
+</section>
+
+<!-- Cars -->
+<main class="container py-5" id="cars">
+    <h3 class="display-5 text-center fw-bold" >Автопарк</h3>
+
+    <div class="row">
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-top w-100 h-100 text-center">
+                    <img src="assets/cars/cobalt2.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold">Cobalt</h3>
+                  <p class="card-text text-muted mb-2">
+                    Надежный седан для повседневных поездок и дальних путешествий. Экономичный расход топлива и просторный салон.
+                  </p>
+                  <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                    <!-- <a href="#" class="btn btn-outline-success ">Забронировать</a> -->
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-top w-100 h-100 text-center">
+                    <img src="assets/cars/equinox.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold">Equinox</h3>
+                  <p class="card-text text-muted mb-2">
+                    Современный кроссовер с просторным салоном и продвинутыми системами безопасности. Идеальный выбор для семейных поездок.
+                  </p>
+                  <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-top w-100 h-100 text-center">
+                    <img src="assets/cars/gentra.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold">Gentra</h3>
+                  <p class="card-text text-muted mb-2">
+                    Комфортный седан с классическим дизайном. Экономичен в эксплуатации и удобен для повседневного использования.
+                  </p>
+                  <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-top w-100 h-100 text-center">
+                    <img src="assets/cars/onix.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold">Onix</h3>
+                  <p class="card-text text-muted mb-2">
+                    Компактный и стильный седан с отличной маневренностью. Подходит для города и загородных поездок.
+                  </p>
+                  <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-top w-100 h-100 text-center">
+                    <img src="assets/cars/malibu1.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold">Malibu 2</h3>
+                  <p class="card-text text-muted mb-2">
+                    Элегантный седан премиум-класса. Просторный салон и мощный двигатель обеспечивают комфорт и удовольствие от вождения.
+                  </p>
+                  <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-top w-100 h-100 text-center">
+                    <img src="assets/cars/tracker.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold">Tracker</h3>
+                  <p class="card-text text-muted mb-2">
+                    Универсальный кроссовер с высоким клиренсом. Отлично подходит для активного отдыха и поездок по любой местности.
+                  </p>
+                  <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+          <div class="card shadow-sm h-100">
+              <div class="card-img-top w-100 h-100 text-center">
+                  <img src="assets/cars/kia.png" class="img-fluid" alt="">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center fw-bold">Kia K5</h3>
+                <p class="card-text text-muted mb-2">
+                  Динамичный седан с современным дизайном. Идеально сочетает комфорт, стиль и производительность.
+                </p>
+                <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-top w-100 h-100 text-center">
+                    <img src="assets/cars/traverse.png" class="img-fluid" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold">Traverse</h3>
+                  <p class="card-text text-muted mb-2">
+                    Большой внедорожник для всей семьи. Просторный салон и высокая проходимость делают его отличным выбором для дальних путешествий.
+                  </p>
+                  <p class="card-text fw-bold">Цена: 300 000 сум/день</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="#contact" class="btn btn-outline-danger">Забронировать</a>
+                    
+                  </div>
+              </div>
+          </div>
+
+    </div>
+
+</main>
+
+<section id="sky-section" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="text-container">
+        <h1 class="display-4 fw-bold">Невероятный</h1>
+        <h1 class="display-4 fw-bold" style="color: rgb(153, 7, 7);">комфорт</h1>
+    </div>
+    <div class="car-container">
+        <img src="assets/cars/malibu-under-sky.png" class="car-image img-fluid" alt="Car under the sky">
+    </div>
+</section>
+
+<section id="advantages" class="pb-5">
+    <div class="py-5">
+        <h1 class="display-5 text-uppercase text-center fw-bold text-white">
+            Почему выбирают <span style="color: rgb(153, 7, 7)">нас</span>?
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center row-gap-3">
+            <!-- Image Section -->
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img src="assets/images/car-interier.png" alt="Car Interior" class="img-fluid rounded">
+            </div>
+
+            <!-- Advantages Section -->
+            <div class="col-12 col-md-6">
+                <div class="row g-4">
+                    <!-- Advantage 1 -->
+                    <div class="col-12 col-sm-6 text-center">
+                        <img src="assets/icons/document.png" alt="Document Icon" class="img-fluid mb-3 icon">
+                        <h3 class="fw-bold text-white">Cтрахование</h3>
+                        <p class="text-white">Все автомобили оборудованы полной страховкой</p>
+                    </div>
+
+                    <!-- Advantage 2 -->
+                    <div class="col-12 col-sm-6 text-center">
+                        <img src="assets/icons/rush.png" alt="Clock Icon" class="img-fluid mb-3 icon">
+                        <h3 class="fw-bold text-white">Скорость</h3>
+                        <p class="text-white">Мы не заставим вас долго ждать</p>
+                    </div>
+
+                    <!-- Advantage 3 -->
+                    <div class="col-12 col-sm-6 text-center">
+                        <img src="assets/icons/pricing.png" alt="Pricing Icon" class="img-fluid mb-3 icon">
+                        <h3 class="fw-bold text-white">Доступность</h3>
+                        <p class="text-white">Вы можете арендовать машину по выгодным условиям</p>
+                    </div>
+
+                    <!-- Advantage 4 -->
+                    <div class="col-12 col-sm-6 text-center">
+                        <img src="assets/icons/gasoline-pump.png" alt="Driver Icon" class="img-fluid mb-3 icon">
+                        <h3 class="fw-bold text-white">Готовность</h3>
+                        <p class="text-white ">Автомобиль выдается с полным баком бензина</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5 my-5 border container rounded bg-light shadow">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 px-5">
+                <p class="lead text-center display-6 text-uppercase text-center fw-bold">Cвязаться с нами</p>
+                <p class="lead text-center">Оставьте заявку или позвоните нам
+                    в течение 10 минут и получите
+                    авто без лимита по пробегу!</p>
+                <div class="d-flex justify-content-between">
+                    <a href="tel:+998973038228">+998 97 303 82 28</a>
+                    <p>8:00 - 22:00</p>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <form class="rounded" style="background-color: #505050; padding: 50px 70px;">
+                    <h1 class="fs-2 text-center text-white fw-bold">Контакты</h1>
+                    
+                    <div class="form-group my-1">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group my-1">
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Номер телефона" required minlength="9">
+                    </div>
+                    <div class="form-group my-2">
+                      <button type="submit" class="btn btn-danger w-100" style="background-color: rgb(153, 7, 7); border-color:rgb(153, 7, 7)" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#bookingModal"
+                        id="contact-submit"
+                      >
+                        Отправить
+                      </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="accordion" class="container py-5 my-5">
+    <p class="lead text-center display-6 text-uppercase text-center fw-bold">Часто задаваемые вопросы</p>
+        <div class="accordion accordion-flush" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Все ли ваши автомобили новые?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Да, все наши автомобили абсолютно новые и поступают напрямую из салона. В отличие от многих конкурентов, которые используют подержанные автомобили, мы гарантируем идеальное техническое состояние и максимальный комфорт для наших клиентов.
+              </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Какие документы нужны для аренды?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Для аренды автомобиля вам понадобятся паспорт, водительское удостоверение и банковская карта для оплаты.                  
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Могу ли я арендовать без залога?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              В большинстве случаев требуется залог, который возвращается после завершения аренды. Однако у нас есть специальные тарифы, которые позволяют арендовать автомобиль без залога.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Что делать в случае поломки?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Если автомобиль вышел из строя, свяжитесь с нашей службой поддержки по телефону, указанному в договоре аренды. Мы организуем замену автомобиля или предоставим помощь на месте.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Можно ли забронировать заранее?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Да, вы можете забронировать автомобиль на нужные вам даты через наш сайт или позвонив в службу поддержки. Рекомендуем бронировать заранее, чтобы гарантировать доступность выбранной модели.
+              </div>
+            </div>
+        </div>
+
+      </div>
+</section>
+
+<section id="location" class="container py-5 my-5">
+    <p class="lead text-center display-6 text-uppercase text-center fw-bold mb-4">Локация</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1533.109569009746!2d64.43884447113182!3d39.7796372974853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50056e7e8f7137%3A0xf9401507df9214f5!2sLuxury%20Rent%20a%20Car!5e0!3m2!1sru!2s!4v1735312289183!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-bottom-0 p-5 pb-4">
+        <h1 class="modal-title fw-bold fs-3" id="bookingModalLabel">Бронирование успешно!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Спасибо за бронирование! Для быстрого ответа рекомендуем связаться:</p>
+        <div class="row">
+          <div class="col-6 text-center">
+            <a href="https://t.me/raupov_4422" class="telegram-link me-3 btn btn-outline-primary"><i class="bi bi-telegram me-2"></i>Telegram</a>
+          </div>
+          <div class="col-6 text-center">
+            <a href="tel:+998973038228" class="phone-link btn btn-outline-success"><i class="bi bi-phone me-2"></i>По телефону</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer border-top-0 p-4 pt-5">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      // Get the form elements
+      const nameInput = document.getElementById('formGroupExampleInput');
+      const phoneInput = document.getElementById('formGroupExampleInput2');
+      const submitButton = document.querySelector('[id="contact-submit"]');
+
+      // Function to check if all inputs are valid
+      function checkFormValidity() {
+          return nameInput.checkValidity() && phoneInput.checkValidity();
+      }
+
+      // Update button state based on form validity
+      function updateSubmitButton() {
+          submitButton.disabled = !checkFormValidity();
+      }
+
+      // Add event listeners to inputs
+      [nameInput, phoneInput].forEach(input => {
+          input.addEventListener('input', updateSubmitButton);
+      });
+
+      // Initial check when the page loads
+      updateSubmitButton();
+
+      
+  });
+</script>
+
+<div class="container" id="footer">
+  <footer class="d-flex flex-wrap justify-content-between py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a> -->
+      <span class="mb-3 mb-md-0 text-body-secondary">RentCar Bukhara</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="tel:+998973038228">+998973038228</a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://t.me/raupov_4422"><svg class="bi" width="24" height="24"><use xlink:href="#telegram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+    </ul>
+  </footer>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <title>Bootstrap</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+  </symbol>
+  <symbol id="telegram" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>        
+  </symbol>
+  <symbol id="instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+  </symbol>
+  <symbol id="twitter" viewBox="0 0 16 16">
+    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+  </symbol>
+</svg>
+
+</body>
+</html>

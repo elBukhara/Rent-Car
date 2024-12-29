@@ -1,0 +1,50 @@
+/* .carousel-item {
+    height: 38rem;
+} */
+
+#carousel-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.c-img-first {
+    height: 95vh;
+    object-fit: cover;
+}
+
+.c-img-second {
+    height: 95vh;
+    object-fit: cover;
+}
+
+/* Adds a subtle shadow to the text for better readability */
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Button hover effect */
+.btn-secondary {
+    background-color: #6c757d; /* Bootstrap default secondary color */
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5156; /* Slightly darker for hover effect */
+    color: #fff;
+    /* transform: scale(1.05); Adds a subtle zoom effect */
+    transition: all 0.5s ease;
+}
+
+
+
+@media (max-width: 768px) {
+    .c-img-second {
+        object-position: left; /* Focus on the left part on smaller screens */
+        height: 80vh;
+    }
+
+    .c-img-first {
+        height: 80vh;
+    }
+}

@@ -1,0 +1,37 @@
+.parallax {
+    position: relative;
+    background-image: url('/assets/images/tashkentcity2.jpg'); /* Replace with your image URL */
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+        ), 
+        url('/assets/images/tashkentcity2.jpg');
+    height: 60vh; /* Full height of the viewport */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Parallax text content */
+.parallax-text {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .parallax-text {
+        font-size: 1.25rem;
+    }
+}
+
+/* For Ipad and tablet screens */
+@media screen and (min-height: 900px) and (min-width: 750px) {
+    .parallax-text {
+        font-size: 2rem;
+    }   
+}

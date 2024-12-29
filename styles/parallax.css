@@ -8,7 +8,7 @@
         url('/assets/images/tashkentcity2.jpg');
     height: 60vh; /* Full height of the viewport */
 
-    background-attachment: fixed;
+    background-attachment: scroll; /* fix parallax effect on iphone devices */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,9 +23,16 @@
 }
 
 
+
 @media screen and (max-width: 768px) {
     .parallax-text {
         font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .parallax-text {
+        font-size: 1.15rem;
     }
 }
 
